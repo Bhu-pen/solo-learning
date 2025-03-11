@@ -7,7 +7,7 @@ const shopItems = {
             description: 'A wise companion that boosts your focus and learning speed.',
             price: 2000,
             rarity: 'epic',
-            imagePath: 'theme/pets/owl.png',
+            imagePath: 'owl.png',
             category: 'pets',
             stats: {
                 loyalty: 95,
@@ -21,7 +21,7 @@ const shopItems = {
             description: 'A clever feline that helps with mathematical calculations.',
             price: 1500,
             rarity: 'rare',
-            imagePath: 'theme/pets/cat.png',
+            imagePath: 'cat.png',
             category: 'pets',
             stats: {
                 loyalty: 85,
@@ -35,7 +35,7 @@ const shopItems = {
             description: 'A magical dragon that enhances your scientific understanding.',
             price: 3000,
             rarity: 'legendary',
-            imagePath: 'theme/pets/dragon.png',
+            imagePath: 'dragon.png',
             category: 'pets',
             stats: {
                 loyalty: 100,
@@ -49,7 +49,7 @@ const shopItems = {
             description: 'A mystical fox that helps you manage your study time better.',
             price: 2500,
             rarity: 'epic',
-            imagePath: 'theme/pets/fox.png',
+            imagePath: 'fox.png',
             category: 'pets',
             stats: {
                 loyalty: 90,
@@ -63,7 +63,7 @@ const shopItems = {
             description: 'A tech-savvy penguin that assists with programming tasks.',
             price: 2800,
             rarity: 'epic',
-            imagePath: 'theme/pets/penguin.png',
+            imagePath: 'penguin.png',
             category: 'pets',
             stats: {
                 loyalty: 92,
@@ -160,7 +160,7 @@ const shopItems = {
             price: 1000,
             rarity: 'epic',
             category: 'themes',
-            previewPath: 'theme/previews/cyber.png'
+            previewPath: 'cyber.png'
         },
         {
             id: 'nature-focus',
@@ -169,7 +169,7 @@ const shopItems = {
             price: 800,
             rarity: 'rare',
             category: 'themes',
-            previewPath: 'theme/previews/nature.png'
+            previewPath: 'nature.png'
         },
         {
             id: 'space-learning',
@@ -178,7 +178,7 @@ const shopItems = {
             price: 1500,
             rarity: 'legendary',
             category: 'themes',
-            previewPath: 'theme/previews/space.png'
+            previewPath: 'space.png'
         }
     ],
     companions: [
@@ -226,7 +226,7 @@ const shopItems = {
                 price: 1500,
                 rarity: 'epic',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar11.png'
+                imagePath: 'avatar11.png'
             },
             {
                 id: 'techWizard',
@@ -235,7 +235,7 @@ const shopItems = {
                 price: 1500,
                 rarity: 'epic',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar2.png'
+                imagePath: 'avatar2.png'
             },
             {
                 id: 'scienceGenius',
@@ -244,7 +244,7 @@ const shopItems = {
                 price: 1200,
                 rarity: 'rare',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar3.png'
+                imagePath: 'avatar3.png'
             }
         ],
         fantasy: [
@@ -255,7 +255,7 @@ const shopItems = {
                 price: 2000,
                 rarity: 'legendary',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar4.png'
+                imagePath: 'avatar4.png'
             },
             {
                 id: 'dragonStudent',
@@ -264,7 +264,7 @@ const shopItems = {
                 price: 1800,
                 rarity: 'epic',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar5.png'
+                imagePath: 'avatar5.png'
             }
         ],
         professional: [
@@ -275,7 +275,7 @@ const shopItems = {
                 price: 1000,
                 rarity: 'rare',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar6.png'
+                imagePath: 'avatar6.png'
             },
             {
                 id: 'teacherAvatar',
@@ -284,7 +284,7 @@ const shopItems = {
                 price: 1200,
                 rarity: 'rare',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar7.png'
+                imagePath: 'avatar7.png'
             }
         ],
         cosmic: [
@@ -295,7 +295,7 @@ const shopItems = {
                 price: 2000,
                 rarity: 'legendary',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar9.png'
+                imagePath: 'avatar9.png'
             },
             {
                 id: 'starStudent',
@@ -304,7 +304,7 @@ const shopItems = {
                 price: 1500,
                 rarity: 'epic',
                 category: 'avatars',
-                imagePath: 'theme/avatars/avatar8.png'
+                imagePath: 'avatar8.png'
             }
         ]
     }
@@ -470,7 +470,7 @@ class Shop {
         return `
             <span class="rarity-badge rarity-${item.rarity}">${item.rarity}</span>
             <div class="pet-image-container">
-                <img src="${item.imagePath}" alt="${item.name}" onerror="this.src='theme/pets/default-pet.png'">
+                <img src="${item.imagePath}" alt="${item.name}" onerror="this.src='default-pet.png'">
             </div>
             <h3 class="item-name">${item.name}</h3>
             <p class="item-description">${item.description}</p>
@@ -546,7 +546,7 @@ class Shop {
         return `
             <span class="rarity-badge rarity-${item.rarity}">${item.rarity}</span>
             <div class="avatar-image">
-                <img src="${item.imagePath}" alt="${item.name}" onerror="this.src='theme/avatars/default.png'">
+                <img src="${item.imagePath}" alt="${item.name}" onerror="this.src='default.png'">
             </div>
             <h3 class="item-name">${item.name}</h3>
             <p class="item-description">${item.description}</p>
